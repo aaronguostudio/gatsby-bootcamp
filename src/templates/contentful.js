@@ -24,7 +24,7 @@ const Blog = (props) => {
       [BLOCKS.EMBEDDED_ASSET]: node => {
         const { file } = node.data.target.fields;
         const { url } = file["en-US"];
-        return <img src={`http:${url}`} alt="test" />;
+        return <img src={`https:${url}`} alt="test" />;
       }
     }
   }
